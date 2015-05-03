@@ -55,13 +55,15 @@ $reports_count = DB::table('reports')->count()	;
 						</div>
 					</div>
 					<div class="panel-body page-nhom-chungloai-loai-thietbi-text">
-						<div class="row">
-							<div class="col-md-12 space20">
-								<a class="btn btn-success" href="{{ route('report.create') }}" role="button">
-								Thêm Mới <i class="fa fa-plus"></i>
-							</a>
+						@if( Auth::user()->isAdmin() || Auth::user()->isManager() )
+							<div class="row">
+								<div class="col-md-12 space20">
+									<a class="btn btn-success" href="{{ route('report.create') }}" role="button">
+									Thêm Mới <i class="fa fa-plus"></i>
+								</a>
+								</div>
 							</div>
-						</div>
+						@endif()
 						<div class="table-responsive">
 							<table class="table table-bordered table-striped table-hover" id="sample_2">
 								<thead>

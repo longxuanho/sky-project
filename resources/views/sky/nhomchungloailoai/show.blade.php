@@ -102,6 +102,7 @@
                 
 				<div class="panel-body page-nhom-chungloai-loai-thietbi-text">
 				    
+                    @if (Auth::user()->isAdmin() || Auth::user()->isManager())
                     <div class="row">
 						<div class="col-md-12 space20">
 							<a class="btn btn-success" href="{{ route('nhom.chungloai.loai.thietbi.create', [$nhom->slug, $chung_loai->slug, $loai->slug ]) }}" role="button">
@@ -109,6 +110,7 @@
 							</a>
 						</div>
 					</div>
+					@endif
 
                     <div class="table-responsive">
 						<table class="table table-striped table-bordered table-hover table-full-width " id="sample_1">

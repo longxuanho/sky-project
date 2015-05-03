@@ -72,7 +72,7 @@ $thiet_bi_all = DB::table('thiet_bis')
 				
                 <!-- start: PAGE TITLE & BREADCRUMB -->
                 <div class="page-header">
-					<h1>Cập nhật... <small>Thay đổi thông tin hạng mục [{{ $thiet_bi->ma_thiet_bi }}] </small></h1>
+					<h1>{{ (Auth::user()->isAdmin() || Auth::user()->isManager()) ? 'Cập nhật...' : 'Chi tiết...'}} <small>Thay đổi thông tin hạng mục [{{ $thiet_bi->ma_thiet_bi }}] </small></h1>
 				</div>
 				<!-- end: PAGE TITLE & BREADCRUMB -->
                 
@@ -92,7 +92,9 @@ $thiet_bi_all = DB::table('thiet_bis')
 						<i class="fa fa-reorder"></i>
 						Chi Tiết
 						<div class="panel-tools">
+							@if( Auth::user()->isAdmin() || Auth::user()->isManager() )
 								<a class="btn btn-xs btn-link" data-toggle="modal" href="#myModal3"><i class="fa fa-trash-o"></i></a>
+							@endif
 								<a class="btn btn-xs btn-link panel-collapse collapses" href="#"></a>
 						</div>
 					</div>
@@ -148,13 +150,16 @@ $thiet_bi_all = DB::table('thiet_bis')
 
 							@include('sky.nhomchungloailoaithietbi._form_')
 
-							<div class="row">
-								<div class="col-md-12 space20">
-									<button type="submit" class="btn btn-info">
-										Cập Nhật <i class="fa fa-plus"></i>
-									</button>
+							
+							@if( Auth::user()->isAdmin() || Auth::user()->isManager() )	
+								<div class="row">
+									<div class="col-md-12 space20">
+										<button type="submit" class="btn btn-info">
+											Cập Nhật <i class="fa fa-plus"></i>
+										</button>
+									</div>
 								</div>
-							</div>
+							@endif
 
 						{!! Form::close() !!}
 					</div>

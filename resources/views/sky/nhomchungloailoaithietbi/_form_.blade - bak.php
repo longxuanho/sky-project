@@ -1,5 +1,4 @@
-<?php $isAuthorized = Auth::user()->isAdmin() || Auth::user()->isManager();
-?>
+
 <hr/>
 {!! Form::hidden('id', null, [   'id' => 'id',
                                 'class' => 'form-control', 
@@ -16,8 +15,7 @@
                                                     'placeholder' =>'Mã Thiết Bị',
                                                     'data-placement' => 'top',
                                                     'data-rel' => 'tooltip',
-                                                    'data-original-title' => 'Mã quản lý thiết bị',
-                                                    (!$isAuthorized) ? 'readonly' : '' 
+                                                    'data-original-title' => 'Mã quản lý thiết bị'
                                                 ]   ) !!}
 			<i class="clip clip-barcode"></i>
         </span>
@@ -29,8 +27,7 @@
                                                         'placeholder' =>'Associated With',
                                                         'data-placement' => 'top',
                                                         'data-rel' => 'tooltip',
-                                                        'data-original-title' => 'Tên TB kèm theo',
-                                                        (!$isAuthorized) ? 'readonly' : ''
+                                                        'data-original-title' => 'Tên TB kèm theo'
                                                     ]   ) !!}
 			<i class="fa fa-arrow-circle-left"></i>
         </span>
@@ -45,8 +42,7 @@
                                                     'placeholder' => 'Hãng Sản Xuất',
                                                     'data-placement' => 'bottom',
                                                     'data-rel' => 'tooltip',
-                                                    'data-original-title' => 'Tên hãng sản xuất',
-                                                    (!$isAuthorized) ? 'disabled' : ''
+                                                    'data-original-title' => 'Tên hãng sản xuất'
                                                     ]) !!}
            <i class="fa fa-briefcase"></i>
         </span>
@@ -58,8 +54,7 @@
                                                     'placeholder' => 'Model Thiết Bị',
                                                     'data-placement' => 'bottom',
                                                     'data-rel' => 'tooltip',
-                                                    'data-original-title' => 'Tên model thiết bị',
-                                                    (!$isAuthorized) ? 'disabled' : ''
+                                                    'data-original-title' => 'Tên model thiết bị'
                                                     ]) !!}
             <i class="fa fa-folder-open"></i>
         </span>
@@ -79,8 +74,7 @@
                                                     'placeholder' =>'Số Đăng Ký',
                                                     'data-placement' => 'top',
                                                     'data-rel' => 'tooltip',
-                                                    'data-original-title' => 'Số đăng ký phương tiện',
-                                                    (!$isAuthorized) ? 'readonly' : ''
+                                                    'data-original-title' => 'Số đăng ký phương tiện'
                                                 ]   ) !!}
 			<i class="fa fa-pencil-square-o"></i> </span>
 	</div>
@@ -91,8 +85,7 @@
                                                     'placeholder' =>'Số Giấy Đăng Kiểm',
                                                     'data-placement' => 'top',
                                                     'data-rel' => 'tooltip',
-                                                    'data-original-title' => 'Số giấy đăng kiểm',
-                                                    (!$isAuthorized) ? 'readonly' : ''
+                                                    'data-original-title' => 'Số giấy đăng kiểm'
                                                 ]   ) !!}
 			<i class="fa fa-file-text"></i> </span>
 	</div>
@@ -103,8 +96,7 @@
                                                     'placeholder' =>'Tag',
                                                     'data-placement' => 'top',
                                                     'data-rel' => 'tooltip',
-                                                    'data-original-title' => 'Tạo tag tìm kiếm nhanh',
-                                                    (!$isAuthorized) ? 'readonly' : ''
+                                                    'data-original-title' => 'Tạo tag tìm kiếm nhanh'
                                                 ]   ) !!}
 			<i class="fa fa-hand-o-right"></i> </span>
 	</div>
@@ -119,8 +111,7 @@
                                                     'placeholder' =>'Số Khung',
                                                     'data-placement' => 'bottom',
                                                     'data-rel' => 'tooltip',
-                                                    'data-original-title' => 'Số khung',
-                                                    (!$isAuthorized) ? 'readonly' : ''
+                                                    'data-original-title' => 'Số khung'
                                                 ]   ) !!}
 			<i class="fa fa-cogs"></i> </span>
 	</div>
@@ -131,8 +122,7 @@
                                                     'placeholder' =>'Số Máy',
                                                     'data-placement' => 'bottom',
                                                     'data-rel' => 'tooltip',
-                                                    'data-original-title' => 'Số máy',
-                                                    (!$isAuthorized) ? 'readonly' : ''
+                                                    'data-original-title' => 'Số máy'
                                                 ]   ) !!}
 			<i class="fa fa-cog"></i> </span>
 	</div>
@@ -149,8 +139,7 @@
                                                     'placeholder' => 'Đơn Vị Sở Hữu',
                                                     'data-placement' => 'bottom',
                                                     'data-rel' => 'tooltip',
-                                                    'data-original-title' => 'Tên đơn vị sở hữu',
-                                                    (!$isAuthorized) ? 'disabled' : ''
+                                                    'data-original-title' => 'Tên đơn vị sở hữu'
                                                     ]) !!}
             <i class="clip clip-user-5"></i>
         </span>
@@ -162,8 +151,7 @@
                                                     'placeholder' => 'Đơn Vị Quản Lý',
                                                     'data-placement' => 'bottom',
                                                     'data-rel' => 'tooltip',
-                                                    'data-original-title' => 'Tên đơn vị quản lý',
-                                                    (!$isAuthorized) ? 'disabled' : ''
+                                                    'data-original-title' => 'Tên đơn vị quản lý'
                                                     ]) !!}
             <i class="fa fa-user"></i>
         </span>
@@ -175,8 +163,7 @@
                                                     'placeholder' => 'Đơn Vị Thuê',
                                                     'data-placement' => 'bottom',
                                                     'data-rel' => 'tooltip',
-                                                    'data-original-title' => 'Tên đơn vị thuê',
-                                                    (!$isAuthorized) ? 'disabled' : ''
+                                                    'data-original-title' => 'Tên đơn vị thuê'
                                                     ]) !!}
             <i class="clip clip-user-4"></i>
         </span>
@@ -194,8 +181,7 @@
                                                     'placeholder' =>'Năm Sử Dụng',
                                                     'data-placement' => 'top',
                                                     'data-rel' => 'tooltip',
-                                                    'data-original-title' => 'Năm đưa TB vào hoạt động',
-                                                    (!$isAuthorized) ? 'readonly' : ''
+                                                    'data-original-title' => 'Năm đưa TB vào hoạt động'
                                                 ]   ) !!}
 			<i class="fa fa-calendar"></i> </span>
 	</div>
@@ -206,8 +192,7 @@
                                                     'placeholder' =>'Năm Sản Xuất',
                                                     'data-placement' => 'top',
                                                     'data-rel' => 'tooltip',
-                                                    'data-original-title' => 'Năm TB được sản xuất',
-                                                    (!$isAuthorized) ? 'readonly' : ''
+                                                    'data-original-title' => 'Năm TB được sản xuất'
                                                 ]   ) !!}
 			<i class="clip clip-calendar"></i> </span>
 	</div>
@@ -221,8 +206,7 @@
                                                     'placeholder' => 'Khu Vực',
                                                     'data-placement' => 'bottom',
                                                     'data-rel' => 'tooltip',
-                                                    'data-original-title' => 'Tên khu vực hoạt động',
-                                                    (!$isAuthorized) ? 'disabled' : ''
+                                                    'data-original-title' => 'Tên khu vực hoạt động'
                                                     ]) !!}
             <i class="clip clip-location"></i>
         </span>
@@ -235,8 +219,7 @@
                                                     'data-placement' => 'bottom',
                                                     'data-rel' => 'tooltip',
                                                     'data-original-title' => 'Ghi chú về TB',
-                                                    'style' => 'margin-top: 3px;',
-                                                    (!$isAuthorized) ? 'readonly' : ''
+                                                    'style' => 'margin-top: 3px;'
                                                 ]   ) !!}
 			<i class="fa fa-quote-left"></i> </span>
 	</div>

@@ -94,6 +94,7 @@ $reports_count = DB::table('reports')->count()	;
 							
 							@include('sky.report._form_')
 
+							@if( Auth::user()->isAdmin() || Auth::user()->isManager() )
 							<div class="row">
 								<div class="col-md-12 space20">
 									<button type="submit" class="btn btn-success">
@@ -101,6 +102,8 @@ $reports_count = DB::table('reports')->count()	;
 									</button>
 								</div>
 							</div>
+
+							@endif
 
 						{!! Form::close() !!}
 					</div>
