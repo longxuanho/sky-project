@@ -1,0 +1,14 @@
+id,ten_chung_loai,ghi_chu,nhom_id,slug
+1,Cẩu bờ,,1,cau-bo
+2,Cẩu khung,,1,cau-khung
+3,Xe nâng,,1,xe-nang
+4,TB nâng khác,,1,tb-nang-khac
+5,Xe đầu kéo,,2,xe-dau-keo
+6,Xe tải/bán tải,,2,xe-tai-va-ban-tai
+7,Móoc,,2,mooc
+8,Xe chuyên dụng,,2,xe-chuyen-dung
+9,Xe du lịch,,2,xe-du-lich
+10,Moto,,2,moto
+11,Tàu thuyền,,3,tau-thuyen
+12,Máy phát,,4,may-phat
+13,Vận thăng,,5,van-thang

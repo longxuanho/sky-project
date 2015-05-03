@@ -1,0 +1,73 @@
+id,ma_hang_san_xuat,ten_hang_san_xuat,quoc_gia,ghi_chu,slug
+1,KE,Kranbau Eberswalde,Germany,,kranbau-eberswalde
+2,KOCKS,Kocks Krane GmbH,Germany,,kocks-gmbh
+3,ZPMC,ZPMC,China,,zpmc
+4,IHI,IHI,Japan,,ihi
+5,ALM,Alimax,,,alimax
+6,LB,Liebherr,Germany,,liebherr
+7,KALMR,Kalmar,Sweden,,kalmar
+8,MIJCK,Mi-jack,US,,mi-jack
+9,UNKN,Unkown,Taiwan,,unkown
+10,DOOS,Doosan,Korea,,doosan
+11,VALM,Valmet,Finland,,valmet
+12,LUNA,Luna,Spain,,luna
+13,FNTZ,Fantuzzi,Italia,,fantuzzi
+14,FRRR,Ferrari,Italia,,ferrari
+15,TERX,Terex,France,,terex
+16,LIND,Linde,,,linde
+17,TCM,TCM,Japan,,tcm
+18,LNGB,Langceboss,Japan,,langceboss
+19,TOYT,Toyota,Japan,,toyota
+20,BOSS,Boss,Japan,,boss
+21,HYST,Hyster,US,,hyster
+22,KMTS,Komatsu,Japan,,komatsu
+23,MSBS,Mitsubishi,Japan,,mitsubishi
+24,NVTX,Noveltex,,,noveltex
+25,HYND,Huyndai,Korea,,huyndai
+26,JLG,JLG,Germany,,jlg
+27,GENE,Gene,,,gene
+28,MAZ,Maz,Belarut,,maz
+29,SISU,Sisu Magum,US,,sisu-magum
+30,SCAN,Scania,,,scania
+31,RENT,Renault,France,,renault
+32,MAN,Man,Germany,,man
+33,KAMZ,Kamaz,Russia,,kamaz
+34,TERB,Terberg,Malaysia,,terberg
+35,CAPA,Capacity,US,,capacity
+36,DONG,Dongfeng,China,,dongfeng
+37,DAEW,Daewoo,Korea,,daewoo
+38,HOWO,Howo,China,,howo
+39,HINO,Hino,,,hino
+40,FRGH,Freightliner,US,,freightliner
+41,OTT,Ottawa,Japan,,ottawa
+42,BHTR,Binh Trieu,Vietnam,,binh-trieu
+43,CHYU,Chienyou,China,,chienyou
+44,CNGD,Cong Danh,Vietnam,,cong-danh
+45,CHPH,Chan Phat,Vietnam,,chan-phat
+46,MRNG,Morning,,,morning
+47,HANM,Ha Nam,Vietnam,,ha-nam
+48,SNP,Saigon Newport,Vietnam,,saigon-newport
+49,TNTH,Tan Thanh,Vietnam,,tan-thanh
+50,HNDA,Honda,Japan,,honda
+51,GMC,GMC,,,gmc
+52,FORD,Ford,US,,ford
+53,UAZ,UAZ,,,uaz
+54,DHTS,Daihatsu,Japan,,daihatsu
+55,KIA,KIA,Korea,,kia
+56,ISUZ,Isuzu,Japan,,isuzu
+57,VNXK,Vinaxuki,Vietnam,,vinaxuki
+58,ZIN,ZIN,,,zin
+59,MRCD,Mercedes,,,mercedes
+60,ZMLN,Zoomlion,,,zoomlion
+61,DGA,DGA,,,dga
+62,VOLV,Volvo,,,volvo
+63,CMMN,Cummins,,,cummins
+64,HUUT,Huu Toan,,,huu-toan
+65,PERK,Perkins,,,perkins
+66,DIAN,Di An,,,di-an
+67,DEUT,Deutz,,,deutz
+68,DETR,Detroit,,,detroit
+69,YALE,Yale,,,yale
+70,SUMI,Sumitomo,Japan,,sumitomo
+71,CIMC,CIMC,,,cimc
+1000,NULL, Hãng Sản Xuất,,,null

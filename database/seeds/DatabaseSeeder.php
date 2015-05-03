@@ -12,9 +12,21 @@ class DatabaseSeeder extends Seeder {
 	 */
 	public function run()
 	{
-		// Model::unguard();
+		Model::unguard();
 
 		$this->call('UserTableSeeder');
+		$this->call('NhomTableSeeder');
+		$this->call('ChungLoaiTableSeeder');
+		$this->call('LoaiTableSeeder');
+		$this->call('HangSanXuatTableSeeder');
+		$this->call('KhuVucTableSeeder');
+		$this->call('DvQuanLyTableSeeder');
+		$this->call('DvSoHuuTableSeeder');
+		$this->call('DvThueTableSeeder');
+		$this->call('ModelThietBiTableSeeder');
+		$this->call('ThietBiTableSeeder');
+		$this->call('ReportCategoryTableSeeder');
+		$this->call('ReportTimelineTableSeeder');
 	}
 
 }

@@ -1,0 +1,46 @@
+id,ma_dv,ten_dv,ghi_chu,tag_1,slug
+1,XNCG,Xí nghiệp Cơ giới xếp dỡ Tân Cảng,,,xncg
+2,TCT,Tổng Công ty Tân Cảng Sài Gòn,,,tct
+3,GNVT,Đại lý Giao nhận vận tải,,,gnvt
+4,CPCL,CP Cảng Cát Lái,,,cpcl
+5,DVKT,Dịch vụ Kỹ thuật,,,dvkt
+6,KVTC,Kho vận Tân Cảng,,,kvtc
+7,VTT,Vận tải thủy,,,vtt
+8,CP189,Tân Cảng 189 Hải Phòng,,,cp189
+9,CP128,Tân Cảng 128 Hải Phòng,,,cp128
+10,VTB,Vận tải bộ,,,vtb
+11,TCCT,CP Tân Cảng Cái Mép,,,tcct
+12,TCIT,Cảng Quốc tế Tân Cảng Cái Mép,,,tcit
+13,ICD_ST,ICD Sóng Thần,,,icd-st
+14,ICD_LB,ICD Long Bình,,,icd-lb
+15,XNDT,Xí nghiệp đầu tư và phát triển Tân Cảng,,,xndt
+16,TCMT,CP Tân Cảng Miền Trung,,,tcmt
+17,TCHP,Tân Cảng Hiệp Phước,,,tchp
+18,15-03,Công ty 15-03,,,15-03
+19,QSBV,Quân sự Bảo vệ,,,qsbv
+20,DIAOC,CP Địa ốc Tân Cảng,,,diaoc
+21,CANGVU,Cảng vụ,,,cangvu
+22,DVHH,Dịch vụ Hàng hải,,,dvhh
+23,HCHC,Hành chính hậu cần,,,hchc
+24,TTDD,Trung tâm Điều độ,,,ttdd
+25,XNLB,Xí nghiệp đầu tư và phát triển Long Bình,,,xnlb
+26,DIC,DIC,,,dic
+27,XDCT,Xây dựng công trình,,,xdct
+28,TVCL,Tiếp vận Cát Lái,,,tvcl
+29,TCO,CP Dịch vụ Biển,,,tco
+30,BENTHANH,Bến Thành,,,benthanh
+31,XDSM,CP Xây dựng số Một,,,xdsm
+32,TCOT,CP Cảng Quốc tế Cái Mép - Thị Vải ODA,,,tcot
+33,ATPC,Phòng An toàn Pháp chế,,,atpc
+34,KTVT,Phòng Kỹ thuật Vật tư,,,ktvt
+35,TCSS,CP Vận tải Biển,,,tcss
+36,ITC,Cảng ITC Phú Hữu,,,itc
+37,TVLB,Tiếp vận Long Bình,,,tvlb
+38,QLCT,Phòng Quản Lý Công Trình,,,qlct
+39,TVBD,Tiếp Vận Bình Dương,,,tvbd
+40,TVVT,Tiếp Vận Vũng Tàu,,,tvvt
+41,TVHPH,Tiếp Vận Hiệp Phước,,,tvhph
+42,TVMK,Tiếp Vận MeKong,,,tvmk
+43,HOATIEU,Hoa Tiêu,,,hoatieu
+44,DTV,Cảng Dầu Thực Vật,,,dtv
+1000,NULL, Đơn Vị Thuê,,,null

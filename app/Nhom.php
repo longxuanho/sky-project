@@ -8,7 +8,7 @@ class Nhom extends Model {
 		'ten_nhom',
 		'ghi_chu',
 		'tag_1',
-		//'slug'
+		// 'slug'
 	];
 
 	public function chungLoais()

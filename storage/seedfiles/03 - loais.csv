@@ -1,0 +1,50 @@
+id,ten_loai,ghi_chu,chung_loai_id,slug
+1,KE,,1,ke
+2,Kocks,,1,kocks
+3,ZPMC,,1,zpmc
+4,IHI,,1,ihi
+5,Liebherr cố định,,1,liebherr-co-dinh
+6,Liebherr ray,,1,liebherr-ray
+7,RTG 3+1,,2,rtg-3+1
+8,RTG 6+1,,2,rtg-6+1
+9,RTG 13+1,,2,rtg-13+1
+10,RMG,,2,rmg
+11,Xe nâng hàng,,3,xe-nang-hang
+12,Xe nâng sửa chữa,,3,xe-nang-sua-chua
+13,Xe nâng rỗng,,3,xe-nang-rong
+14,Xe nâng kho,,3,xe-nang-kho
+15,Xe thang,,4,xe-thang
+16,Xe phục vụ sửa chữa,,4,xe-pv-sua-chua
+17,Cầu trục xưởng,,4,cau-truc-xuong
+18,Cẩu ô tô,,4,cau-o-to
+19,Xe sửa chữa,,4,xe-sua-chua
+20,Cẩu bánh xích,,4,cau-banh-xich
+21,Cẩu bánh lốp,,4,cau-banh-lop
+22,Cẩu bonton,,4,cau-bonton
+23,Đầu kéo nội bộ,,5,dau-keo-noi-bo
+24,Đầu kéo chạy ngoài,,5,dau-keo-chay-ngoai
+25,Xe tải,,6,xe-tai
+26,Xe bán tải,,6,xe-ban-tai
+27,Móoc 20 ft,,7,mooc-20ft
+28,Móoc 40 ft,,7,mooc-40ft
+29,Móoc 45 ft,,7,mooc-45ft
+30,Móoc - Unknown,,7,mooc-unknown
+31,Xe khách,,8,xe-khach
+32,Xe khách nội bộ,,8,xe-khach-noi-bo
+33,Xe quét đường,,8,xe-quet-duong
+34,Xe cứu thương,,8,xe-cuu-thuong
+35,Xe cứu hỏa,,8,xe-cuu-hoa
+36,Xe chỉ huy,,8,xe-chi-huy
+37,Xe bồn,,8,xe-bon
+38,Xe rửa cẩu,,8,xe-rua-cau
+39,Xe 4 chỗ,,9,xe-4-cho
+40,Xe 7 chỗ,,9,xe-7-cho
+41,Xe 15 chỗ,,9,xe-15-cho
+42,Moto chuyên dụng,,10,moto-chuyen-dung
+43,Ca nô,,11,ca-no
+44,Tàu kéo,,11,tau-keo
+45,Tàu khách,,11,tau-khach
+46,Sà lan,,11,sa-lan
+47,Cẩu nổi,,11,cau-noi
+48,Máy phát,,12,may-phat
+49,Vận thăng,,13,van-thang

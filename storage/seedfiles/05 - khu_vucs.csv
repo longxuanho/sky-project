@@ -1,0 +1,21 @@
+id,ma_khu_vuc,ten_khu_vuc,ghi_chu,tag_1,slug
+1,CLA,Cát Lái,,,cat-lai
+2,TCA,Tân Cảng,,,tan-cang
+3,CME,Cái Mép,,,cai-mep
+4,STH,Sóng Thần,,,song-than
+5,189,189 Hải Phòng,,,189-hai-phong
+6,128,128 Hải Phòng,,,128-hai-phong
+7,LBI,Long Bình,,,long-binh
+8,SDE,Sa Đéc,,,sa-dec
+9,CAO,Cao Lãnh,,,cao-lanh
+10,NTR,Nhơn Trạch,,,nhon-trach
+11,QUN,Qui Nhơn,,,qui-nhon
+12,HPH,Hiệp Phước,,,hiep-phuoc
+13,MTAY,Miền Tây,,,mien-tay
+14,THH,Thanh Hóa,,,thanh-hoa
+15,HLUC,Hiệp Lực,,,hiep-luc
+16,STIEN,Deport Suối Tiên,,,deport-suoi-tien
+17,MTR,Miền Trung,,,mien-trung
+18,TRGSA,Trường Sa,,,truong-sa
+19,DTV,Cảng Dầu Thực Vật,,,cang-dau-thuc-vat
+1000,NULL, Khu Vực Hoạt Động,,,null
