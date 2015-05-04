@@ -72,7 +72,7 @@ $thiet_bi_all = DB::table('thiet_bis')
 				
                 <!-- start: PAGE TITLE & BREADCRUMB -->
                 <div class="page-header">
-					<h1>{{ (Auth::user()->isAdmin() || Auth::user()->isManager()) ? 'Cập nhật...' : 'Chi tiết...'}} <small>Thay đổi thông tin hạng mục [{{ $thiet_bi->ma_thiet_bi }}] </small></h1>
+					<h1>{{ (Auth::user()->isAdmin() || Auth::user()->isManager()) ? 'Cập nhật...' : 'Chi tiết...'}} <small>{{ (!isset($user_last_modified)) ? 'Thay đổi thông tin hạng mục ['.$thiet_bi->ma_thiet_bi.']' : 'Cập nhật lần cuối bởi '.$user_last_modified->name. ', '.$thiet_bi->updated_at }}</small></h1>
 				</div>
 				<!-- end: PAGE TITLE & BREADCRUMB -->
                 

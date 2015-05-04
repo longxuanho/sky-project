@@ -77,8 +77,8 @@ $thiet_bi_all = DB::table('thiet_bis')
 	</div>
 	<!-- end: PAGE HEADER -->
 	<!-- start: PAGE CONTENT -->
-	{{-- <div class="row">
-		<div class="col-sm-4">
+	<div class="row">
+		{{-- <div class="col-sm-4">
 			<div class="core-box">
 				<div class="heading">
 					<i class="clip-database circle-icon circle-bricky expandOpen"></i>
@@ -122,30 +122,16 @@ $thiet_bi_all = DB::table('thiet_bis')
 		</div>
 	</div> --}}
 	<?php
-
 	$filepath = storage_path().'/seedfiles/'.'08 - thiet_bis.csv';
 
-	if (($handle = fopen($filepath, "r")) !== FALSE) 
-	{
-	    //by-pass the header
-	    $data = fgetcsv($handle, 1000, ",");
+		if (($handle = fopen($filepath, "r")) !== FALSE) 
+		{
+		    //by-pass the header
+		    $data = fgetcsv($handle, 1000, ",");
 
-	    var_dump($data);
-
-	    // while (($data = fgetcsv($handle, 1000, ",")) !== FALSE)
-	    // {
-	    //     $num = count($data);
-	    //     for ( $c=0; $c < $num; $c++) 
-	    //         echo $data[$c] . "<br />\n";
-    	// }
-    	
-    	fclose($handle);
-    }
-	
-
-
+		    var_dump($data);
+		}
 	?>
-
 </div>
 
 @endsection

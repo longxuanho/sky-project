@@ -21,7 +21,8 @@ class ThietBi extends Model {
 		'khu_vuc_id',
 		'model_id',
 		'ghi_chu',
-		'tag_1'
+		'tag_1',
+		'last_modified_by_user_id'
 	];
 
 	// Attributes
@@ -95,7 +96,5 @@ class ThietBi extends Model {
 	{
 		return $this->belongsTo('App\KhuVuc');
 	}
-
-	
 
 }

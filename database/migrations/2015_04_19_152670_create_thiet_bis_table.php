@@ -32,6 +32,7 @@ class CreateThietBisTable extends Migration {
 			$table->integer('model_id')->unsigned()->index()->nullable();
 			$table->string('ghi_chu', 60)->nullable();
 			$table->string('tag_1', 60)->nullable();
+			$table->integer('last_modified_by_user_id')->unsigned()->nullable();
 			
 			$table->timestamps();
 

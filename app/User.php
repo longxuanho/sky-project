@@ -36,6 +36,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 		return $this->hasMany('App\Report');
 	}
 
+
 	public function isAdmin()
 	{
 	    return $this->role === 'admin' ? true : false;
@@ -50,5 +51,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 	{
 	    return $this->role === 'visitor' ? true : false;
 	}
+
+
 
 }

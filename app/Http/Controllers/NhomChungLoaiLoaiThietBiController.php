@@ -10,6 +10,7 @@ use App\ChungLoai;
 use App\Loai;
 use App\ThietBi;
 use App\Http\Requests\NhomChungLoaiLoaiThietBiRequest;
+use Auth;
 
 class NhomChungLoaiLoaiThietBiController extends Controller {
 
@@ -64,7 +65,10 @@ class NhomChungLoaiLoaiThietBiController extends Controller {
 		$chung_loai = ChungLoai::whereSlug($chung_loai_slug)->firstOrFail();
 		$loai = Loai::whereSlug($loai_slug)->firstOrFail();
 
-		$loai->thietBis()->save(new ThietBi($request->all()));
+		$thiet_bi = new ThietBi($request->all());
+		$thiet_bi->last_modified_by_user_id = Auth::user()->id;
+
+		$loai->thietBis()->save($thiet_bi);
 
 		session()->flash('flash_message_create', 'Hạng mục ['. $request->input('ma_thiet_bi') .'] đã được tạo mới thành công!');
 		
@@ -104,10 +108,13 @@ class NhomChungLoaiLoaiThietBiController extends Controller {
 		$khu_vuc_list = \App\KhuVuc::orderBy('ten_khu_vuc')->lists('ten_khu_vuc', 'id');
 		$model_thiet_bi_list = \App\ModelThietBi::orderBy('ten_model_thiet_bi')->lists('ten_model_thiet_bi', 'id');
 
+		if(isset($thiet_bi->last_modified_by_user_id))
+			$user_last_modified = \App\User::findOrfail($thiet_bi->last_modified_by_user_id);
+
 		return view('sky.nhomchungloailoaithietbi.edit', compact('thiet_bi',
 			'nhom', 'chung_loai', 'loai',
 			'hang_san_xuat_list', 'dv_so_huu_list',
-			'dv_quan_ly_list', 'dv_thue_list', 'khu_vuc_list', 'model_thiet_bi_list' ));
+			'dv_quan_ly_list', 'dv_thue_list', 'khu_vuc_list', 'model_thiet_bi_list', 'user_last_modified' ));
 	}
 
 	/**
@@ -118,8 +125,10 @@ class NhomChungLoaiLoaiThietBiController extends Controller {
 	 */
 	public function update($nhom_id, $chung_loai_id, $loai_id, $thiet_bi_id, NhomChungLoaiLoaiThietBiRequest $request)
 	{
+
 		$thiet_bi = ThietBi::findOrFail($thiet_bi_id);
 		$thiet_bi->update($request->all());
+		$thiet_bi->update(['last_modified_by_user_id' => Auth::user()->id]);
 
 		session()->flash('flash_message_update', 'Hạng mục ['. $request->input('ma_thiet_bi') .'] được cập nhật thành công!');
 

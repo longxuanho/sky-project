@@ -41,7 +41,8 @@ class ThietBiTableSeeder extends Seeder {
 		        			'khu_vuc_id' => $data[14],
 		        			'model_id' => $data[15],
 		        			'ghi_chu' => $data[16],
-		        			'tag_1' => $data[17]
+		        			'tag_1' => $data[17],
+		        			'last_modified_by_user_id' => (isset($data[18]) ? $data[18] : null)
 		        		]);
 	    	}
 	    	
