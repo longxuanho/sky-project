@@ -108,7 +108,7 @@ class NhomChungLoaiLoaiThietBiController extends Controller {
 		$khu_vuc_list = \App\KhuVuc::orderBy('ten_khu_vuc')->lists('ten_khu_vuc', 'id');
 		$model_thiet_bi_list = \App\ModelThietBi::orderBy('ten_model_thiet_bi')->lists('ten_model_thiet_bi', 'id');
 
-		if(isset($thiet_bi->last_modified_by_user_id))
+		if(isset($thiet_bi->last_modified_by_user_id) && ($thiet_bi->last_modified_by_user_id !== 0))
 			$user_last_modified = \App\User::findOrfail($thiet_bi->last_modified_by_user_id);
 
 		return view('sky.nhomchungloailoaithietbi.edit', compact('thiet_bi',
