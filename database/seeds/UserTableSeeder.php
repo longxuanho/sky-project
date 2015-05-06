@@ -124,8 +124,8 @@ class UserTableSeeder extends Seeder {
 		User::create(
 			[
 				'name' => 'Huỳnh Quảng',
-				'email' => 'huynhngocquang@gmail.com',
-				'password' => Hash::make('Sky@14031981#'),
+				'email' => 'hnquang143@gmail.com',
+				'password' => Hash::make('trieugiang1510'),
 				'avatar' => 'assets/images/avatars/Q.jpg',
 				'role' => 'manager'
 			]);
