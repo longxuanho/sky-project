@@ -112,7 +112,53 @@
 					</div>
 					@endif
 
+
+                    @if (Auth::user()->email === "dohaison@gmail.com" || Auth::user()->email === "tranvantuan@gmail.com")
+                  
                     <div class="table-responsive">
+						<table class="table table-striped table-bordered table-hover table-full-width " id="sample_1">
+							<thead>
+                                <tr>
+                                    <th>Mã TB</th>
+                                    <th class="hidden-xs">Assoc.</th>
+                                    <th>Hãng SX</th>
+                                    <th>Số ĐK</th>
+                                    <th class="hidden-xs">Số GĐK</th>
+                                    <th class="text-center">ĐV Quản Lý</th>
+                                    <th class="text-center">Khu Vực</th>
+                                    <th class="text-center hidden-xs">Năm SD</th>
+                                    <th class="text-center">Tag</th>
+                                </tr>
+				            </thead>
+							<tbody>
+								@foreach($thiet_bis as $thiet_bi)
+									<tr>
+	                                    <td>
+	                                    	<a href="{{ route('nhom.chungloai.loai.thietbi.edit', [$nhom->slug, $chung_loai->slug, $loai->slug, $thiet_bi->id ]) }}" style="color: #666666;text-decoration:none;">
+	                                    		{{ $thiet_bi->ma_thiet_bi }}
+	                                    	</a>
+	                                    </td>
+	                                    <td class="hidden-xs">
+											<a href="{{ route('nhom.chungloai.loai.thietbi.edit', [$nhom->slug, $chung_loai->slug, $loai->slug, $thiet_bi->id ]) }}" style="color: #666666;text-decoration:none;">
+	                                    		{{ $thiet_bi->associated_with }}
+											</a>
+	                                    </td>
+	                                    <td>{{ $thiet_bi->hangSanXuat->ten_hang_san_xuat }}</td>
+	                                    <td>{{ $thiet_bi->so_dang_ky ? $thiet_bi->so_dang_ky : '-' }}</td>
+	                                    <td class="hidden-xs">{{ $thiet_bi->so_giay_dang_kiem ? $thiet_bi->so_giay_dang_kiem : '-' }}</td>
+	                                    <td class="text-center">{{ $thiet_bi->dvQuanLy->ma_dv_quan_ly }}</td>
+	                                    <td class="text-center">{{ $thiet_bi->khuVuc->ma_khu_vuc }}</td>
+	                                    <td class="text-center hidden-xs">{{ $thiet_bi->nam_su_dung ? $thiet_bi->nam_su_dung : '-' }}</td>
+	                                    <td class="text-center">{{ $thiet_bi->tag_1 ? $thiet_bi->tag_1 : '-' }}</td>
+	                                </tr>
+								@endforeach
+                            </tbody>
+						</table>
+					</div>
+
+					@else
+
+					<div class="table-responsive">
 						<table class="table table-striped table-bordered table-hover table-full-width " id="sample_1">
 							<thead>
                                 <tr>
@@ -150,6 +196,8 @@
                             </tbody>
 						</table>
 					</div>
+
+					@endif
 
 
                     

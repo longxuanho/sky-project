@@ -53,7 +53,7 @@
     </div>
     <div class="col-sm-4">
         <span class="input-icon">
-            {!! Form::select('model_thiet_bi' , $model_thiet_bi_list, null, [ 'id' => 'model_thiet_bi',
+            {!! Form::select('model_id' , $model_thiet_bi_list, null, [ 'id' => 'model_id',
                                                     'class' => 'form-control tooltips search-select select-text-ident',
                                                     'placeholder' => 'Model Thiết Bị',
                                                     'data-placement' => 'bottom',
