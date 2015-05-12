@@ -173,8 +173,8 @@ class UserTableSeeder extends Seeder {
 		User::create(
 			[
 				'name' => 'Khách',
-				'email' => 'snp',
-				'password' => Hash::make('12345'),
+				'email' => 'snp@gmail.com',
+				'password' => Hash::make('123456'),
 				'avatar' => 'assets/images/avatars/V.jpg',
 				'role' => 'visitor'
 			]);
