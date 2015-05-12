@@ -170,5 +170,13 @@ class UserTableSeeder extends Seeder {
 				'role' => 'visitor'
 			]);
 
+		User::create(
+			[
+				'name' => 'Khách',
+				'email' => 'snp',
+				'password' => Hash::make('12345'),
+				'avatar' => 'assets/images/avatars/V.jpg',
+				'role' => 'visitor'
+			]);
 	}
 }
