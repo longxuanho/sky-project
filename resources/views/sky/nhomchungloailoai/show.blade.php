@@ -143,7 +143,7 @@
 	                                    		{{ $thiet_bi->associated_with }}
 											</a>
 	                                    </td>
-	                                    <td>{{ $thiet_bi->hang_san_xuat_id === 1000 ? $thiet_bi->hangSanXuat->ten_hang_san_xuat : "-" }}</td>
+	                                    <td>{{ ($thiet_bi->hang_san_xuat_id !== 1000) ? $thiet_bi->hangSanXuat->ten_hang_san_xuat : "-" }}</td>
 	                                    <td>{{ $thiet_bi->so_dang_ky ? $thiet_bi->so_dang_ky : '-' }}</td>
 	                                    <td class="hidden-xs">{{ $thiet_bi->so_giay_dang_kiem ? $thiet_bi->so_giay_dang_kiem : '-' }}</td>
 	                                    <td class="text-center">{{ $thiet_bi->dvQuanLy->ma_dv_quan_ly }}</td>
@@ -185,7 +185,7 @@
 	                                    		{{ $thiet_bi->associated_with }}
 											</a>
 	                                    </td>
-	                                    <td>{{ $thiet_bi->hangSanXuat->ten_hang_san_xuat }}</td>
+	                                    <td>{{ ($thiet_bi->hang_san_xuat_id !== 1000) ? $thiet_bi->hangSanXuat->ten_hang_san_xuat : "-" }}</td>
 	                                    <td class="text-center hidden-xs">{{ $thiet_bi->dvSoHuu->ma_dv_so_huu }}</td>
 	                                    <td class="text-center">{{ $thiet_bi->dvQuanLy->ma_dv_quan_ly }}</td>
 	                                    <td class="text-center">{{ $thiet_bi->khuVuc->ma_khu_vuc }}</td>
